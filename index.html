@@ -35,6 +35,22 @@
     <!-- Custom styles for this template -->
 	<link href="dashboard.css" rel="stylesheet">
     <link href="navbar.css" rel="stylesheet">
+	
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//www.piw.geekitude.com/matomo/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->	
   </head>
   <body>
     
@@ -57,16 +73,16 @@
 
       <div class="collapse navbar-collapse" id="navbarsExample03">
         <ul class="navbar-nav col-12">
-          <li class="nav-item col-2">
-            <a class="nav-link dropdown-toggle text-white header-menu-link" data-bs-toggle="dropdown" aria-expanded="false" href="#">AFM Sales</a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown03">
+          <li class="nav-item col-2 dropdown">
+            <a class="nav-link dropdown-toggle text-white header-menu-link" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false" href="#">AFM Sales</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown01">
               <li><a class="dropdown-item" href="#">SWS</a></li>
               <li><a class="dropdown-item" href="#">Linsco</a></li>
             </ul>			
           </li>
-          <li class="nav-item col-2">
-            <a class="nav-link text-white header-menu-link" data-bs-toggle="dropdown" aria-expanded="false" href="#">Product Profitability</a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown03">
+          <li class="nav-item col-2 dropdown">
+            <a class="nav-link text-white header-menu-link" data-bs-toggle="dropdown" id="dropdown02" aria-expanded="false" href="#">Product Profitability</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown02">
               <li><a class="dropdown-item" href="#">Graphs</a></li>
               <li><a class="dropdown-item" href="#">Profit and Loss</a></li>
             </ul>						
@@ -96,7 +112,6 @@
 
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 
-      
   </body>
 </html>
   
